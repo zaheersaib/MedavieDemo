@@ -2,12 +2,13 @@
 
 package Managers;
 
+import Interfaces.IFanManager;
 import Models.Cord;
 import Models.DirectionCord;
 import Models.Fan;
 import Models.SpeedCord;
 
-public class FanManager {
+public class FanManager implements IFanManager {
 	
 	public Fan fan;
 	
@@ -37,7 +38,12 @@ public class FanManager {
 			}
 		} catch (Exception ex) {
 			System.out.println("Error: "+ex.getMessage() );
-		}
+		}		
 			
+	}
+	
+	public void PrintFanSettings() {
+		System.out.println("Speed: "+fan.getSpeedCord().getSpeed());
+		System.out.println("Direction: "+fan.getDirectionCord().getDirection());
 	}
 }

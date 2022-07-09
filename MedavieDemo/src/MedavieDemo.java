@@ -32,6 +32,9 @@ public class MedavieDemo {
 					  fanManager.Pull(fan.getDirectionCord());
 					  fanManager.PrintFanSettings();
 					  break;
+				  case "X":
+					  System.out.println("Exit");
+					  break;
 				  default:
 				    System.out.println("Invalid Option");
 				}

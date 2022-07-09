@@ -43,37 +43,7 @@ public class MedavieDemo {
 		} catch (IOException e) {
 			System.out.println("ERROR: "+ e.getMessage());
 		}
-				
-		System.out.println("Initial Speed " + fanManager.getFan().getSpeedCord().getSpeed());		
-		//fanManager.getFan().getSpeedCord().Pull();
-		fanManager.Pull(fan.getSpeedCord());
 		
-		//fan.directionCord.Pull();
-		System.out.println("Initial Direction " + fanManager.getFan().getDirectionCord().getDirection());
-		
-		//fanManager.getFan().getSpeedCord().Pull();	
-		System.out.println("Speed " + fanManager.getFan().getSpeedCord().getSpeed());
-		
-		fanManager.Pull(fan.getDirectionCord());
-		System.out.println("Direction " + fanManager.getFan().getDirectionCord().getDirection());
-		
-		fanManager.Pull(fan.getSpeedCord());
-		System.out.println("Speed " + fanManager.getFan().getSpeedCord().getSpeed());
-		
-		fanManager.Pull(fan.getSpeedCord());
-		System.out.println("Speed " + fanManager.getFan().getSpeedCord().getSpeed());
-		
-		fanManager.Pull(fan.getDirectionCord());
-		System.out.println("Direction " + fanManager.getFan().getDirectionCord().getDirection());
-		
-		fanManager.Pull(fan.getSpeedCord());		
-		System.out.println("Speed " + fanManager.getFan().getSpeedCord().getSpeed());
-		
-		fanManager.Pull(fan.getSpeedCord());
-		System.out.println("Speed " + fanManager.getFan().getSpeedCord().getSpeed());
-		
-		fanManager.Pull(fan.getDirectionCord());
-		System.out.println("Direction " + fanManager.getFan().getDirectionCord().getDirection());
 	}
 
 }

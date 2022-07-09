@@ -1,0 +1,10 @@
+package Interfaces;
+
+import Models.Cord;
+
+public interface IFanManager {
+	
+	public void Pull(Cord cord);
+	public void PrintFanSettings();
+	
+}

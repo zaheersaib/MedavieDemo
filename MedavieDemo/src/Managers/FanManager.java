@@ -29,10 +29,14 @@ public class FanManager {
 	
 	public void Pull(Cord cord) {
 		
-		if (cord instanceof SpeedCord) {
-			fan.getSpeedCord().Pull();
-		} else if (cord instanceof DirectionCord) {
-			fan.getDirectionCord().Pull();
+		try {
+			if (cord instanceof SpeedCord) {
+				fan.getSpeedCord().Pull();
+			} else if (cord instanceof DirectionCord) {
+				fan.getDirectionCord().Pull();
+			}
+		} catch (Exception ex) {
+			System.out.println("Error: "+ex.getMessage() );
 		}
 			
 	}
